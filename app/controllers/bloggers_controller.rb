@@ -23,13 +23,12 @@ class BloggersController < ApplicationController
 
     def update
         @blogger = Blogger.find(params[:id])
-
         @blogger.update(blogger_params)
+        redirect_to "/bloggers/#{@blogger.id}"
     end
 
     def delete
         @blogger = Blogger.find(params[:id])
-
         @blogger.destroy
     end
 

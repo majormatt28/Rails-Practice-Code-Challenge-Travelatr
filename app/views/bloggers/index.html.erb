@@ -2,6 +2,6 @@
 
 <% @bloggers.each do |blogger|%>
 <ul>
-<li><%=link_to blogger.name, ("bloggers/#{blogger.id}")%></li>
+<li><%=link_to blogger.name, ("#{bloggers_path}/#{blogger.id}")%></li>
 </ul>
 <%end%>

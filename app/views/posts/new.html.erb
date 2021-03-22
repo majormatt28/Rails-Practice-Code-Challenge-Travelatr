@@ -1,0 +1,14 @@
+<h1>Create new Post</h1>
+
+<%= form_for @post do |f|%>
+  <%= f.label :title%>
+  <%= f.text_field :title%>
+  <br>
+  <%= f.label :likes%>
+  <%= f.number_field :likes%>
+  <br>
+  <%= f.label :content%>
+  <%= f.text_area :content%>
+
+  <%= f.submit%>
+<%end%>
