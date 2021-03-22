@@ -2,6 +2,6 @@
 
 <% @posts.each do |post|%>
   <ul>
-    <li><%=link_to post.to_s, ("#{post_path}/#{post.id}")%></li>
+    <li><%=link_to post.title, ("#{post_path}/#{post.id}")%></li>
   </ul>
 <%end%>
