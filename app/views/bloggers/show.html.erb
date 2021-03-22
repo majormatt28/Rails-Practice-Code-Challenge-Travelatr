@@ -1,0 +1,9 @@
+<h1>Bloggers Show Page</h1>
+
+<%= @blogger.name %>
+<%= @blogger.bio %>
+<ul><% @blogger.posts.each do |post|%>
+<li><%= link_to post.title, posts_path(post.id)%></li></ul>
+<%end%>
+
+<%= link_to 'Index', bloggers_path%>
